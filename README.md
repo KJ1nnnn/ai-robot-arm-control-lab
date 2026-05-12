@@ -1,5 +1,7 @@
 # AI Robot Arm Control Lab
 
+로봇로봇로봇 시뮬레이터
+
 A beginner-readable Python project for learning the basics of robotic arm motion.
 
 The current phase is a **Python 2D robotic arm simulator**. It models a simple two-link planar robot arm, calculates forward kinematics, solves inverse kinematics, and visualizes the arm with matplotlib.
