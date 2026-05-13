@@ -30,3 +30,17 @@ def test_interactive_simulator_moves_to_target_and_shows_positions():
     assert "End :" in info_text
 
     plt.close(simulator.fig)
+
+
+def test_interactive_simulator_changes_displayed_joint_count():
+    simulator = RobotArmSimulator(RobotArm2D(link1=1.0, link2=1.0), target=(1.0, 1.0))
+
+    simulator.set_joint_count(10)
+    display_points = simulator._get_display_points()
+    info_text = simulator.info_text.get_text()
+
+    assert simulator.joint_count == 10
+    assert len(display_points) == 11
+    assert "Joints: 10" in info_text
+
+    plt.close(simulator.fig)

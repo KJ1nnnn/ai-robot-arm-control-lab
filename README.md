@@ -44,7 +44,7 @@ python scripts/run_simulator.py
 
 The script creates a two-link robot arm, moves it to a target point, and displays the result using matplotlib.
 
-The simulator window shows the base position, current end-effector position, and target position. You can type a new target `x` and `y` value in the input boxes, then press **Move** to move the arm.
+The simulator window shows the base position, current end-effector position, and target position. You can type a new target `x` and `y` value in the input boxes, then press **Move** to move the arm. You can also choose a displayed joint count from 1 to 10 using the numbered buttons.
 
 ## Run Tests
 
